@@ -1,0 +1,132 @@
+.container {
+  font-family: "Fredoka", sans-serif;
+  height: 100vh;
+  background: rgb(182, 255, 231);
+  display: flex;
+  align-items: center;
+}
+
+.container-card {
+  box-shadow: 0 0 5px grey;
+  width: 500px;
+  height: 200px;
+  padding: 1rem;
+  margin: 0 auto;
+  background: white;
+  border-radius: 0.5rem;
+}
+
+.card-info {
+  height: 75%;
+  display: flex;
+  
+}
+
+.card-info-image {
+  width: 20%;
+  display: flex;
+  justify-content: center;
+}
+
+.image {
+  width: 60px;
+  height: 60px;
+  background: #d7e4ff;
+  border-radius: 50%;
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image img {
+  height: 40px;
+}
+
+.card-info-description {
+  width: 70%;
+}
+
+.card-info-description p {
+  color: #8c8c8c;
+  font-size: 1.1rem;
+}
+
+.card-info-description span {
+  color: #cecece;
+}
+
+.card-info-button {
+  width: 10%;
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+}
+
+.button {
+  position: absolute;
+  top:20px;
+	width: 24px;
+	height: 24px;
+	opacity: 0.2;
+	cursor: pointer;
+  transition: opacity ease 0.5s;
+}
+
+.button:hover {
+  opacity: 1;
+}
+
+.button::before,
+.button::after {
+  content: '';
+	position: absolute;
+	display: block;
+	width: 24px;
+	height: 3px;
+	background: #000;
+}
+
+.button::before {
+  transform: rotate(45deg);
+}
+
+.button::after {
+  transform: rotate(-45deg);
+}
+
+.card-button {
+  height: 25%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.card-button button:first-child,
+.card-button button:last-child {
+  font-family: inherit;
+  font-size: 18px;
+  padding: 8px 13px;
+  border-radius: 8px;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.card-button button:first-child {
+  border: 1px solid #cecece;
+  margin-right: 10px;
+}
+
+.card-button button:last-child  {
+  background: #000;
+  color: #fff;
+  border: none;
+}
+
+.card-button button:first-child:hover {
+  background:  #d7e4ff;
+}
+
+.card-button button:last-child:hover {
+  background: #3b3b3b;
+}
